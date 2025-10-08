@@ -8,6 +8,7 @@ interface Props {
    
 }
 const {tituloCategoria, tecnologias} = Astro.props
+const BASE = import.meta.env.BASE_URL || '/';
 ---
 <div id="tecnologias">
     <h2 class="titulo">{tituloCategoria}</h2>
@@ -15,7 +16,7 @@ const {tituloCategoria, tecnologias} = Astro.props
     <div class="tecnologias_tipo_contenedor">
         {tecnologias.map((tec) => (
             <div class="tecnologias_tipo_contenedor__tecnologia">
-                <img src={'portafolioweb/icons/' + tec.imagen} class="img_icons" alt={tec.nombreTecnologia} />
+                <img src={BASE + 'icons/' + tec.imagen} class="img_icons" alt={tec.nombreTecnologia} />
                 <p>{tec.nombreTecnologia}</p>
             </div>
         ))} 
