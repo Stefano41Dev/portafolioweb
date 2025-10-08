@@ -1,0 +1,36 @@
+---
+interface Props {
+    tituloCategoria: string
+    tecnologias:{
+        nombreTecnologia: string
+        imagen: string
+    }[]
+   
+}
+const {tituloCategoria, tecnologias} = Astro.props
+---
+<div id="tecnologias">
+    <h2 class="titulo">{tituloCategoria}</h2>
+
+    <div class="tecnologias_tipo_contenedor">
+        {tecnologias.map((tec) => (
+            <div class="tecnologias_tipo_contenedor__tecnologia">
+                <img src={'icons/' + tec.imagen} class="img_icons" alt={tec.nombreTecnologia} />
+                <p>{tec.nombreTecnologia}</p>
+            </div>
+        ))} 
+        
+    </div>
+</div>
+<style>
+    .tecnologias_tipo_contenedor {
+        display: flex;
+    }
+    .tecnologias_tipo_contenedor__tecnologia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        text-align: center;
+    }
+</style>

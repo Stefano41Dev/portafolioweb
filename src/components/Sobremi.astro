@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets'
+import imagenFotoPerfil from '../assets/foto-perfil.jpg'
+import { DATOS_PERFIL } from '../data/perfil';
+---
+
+<div class="sobre-mi" id="sobre-mi">
+    <div class="sobre-mi__contenedor_foto_perfil">
+        <Image src={imagenFotoPerfil} alt="Foto de perfil de Stefano Gonzales" class="sobre_mi__foto_perfil"/>
+    </div>
+    <div class="sobre_mi__descripcion">
+        <h1>{DATOS_PERFIL.nombresCompleto}</h1>
+        <p>{DATOS_PERFIL.sobreMi}</p>
+        <div>
+            <a href={DATOS_PERFIL.linksSociales.github} target="_blank"><img src="icons/github.svg" class="img_icons" alt="Github"> </a>
+            <a href={DATOS_PERFIL.linksSociales.linkdin} target="_blank"><img src="icons/linkedin.svg" class="img_icons" alt="Linkedin"></a>
+            <a href={DATOS_PERFIL.linksSociales.gmail}><img src="icons/gmail.svg" class="img_icons" alt="Gmail"></a>
+            <a href={DATOS_PERFIL.linksSociales.cv} target="_blank" rel="noopener noreferrer"><img src="icons/cv.svg" class="img_icons" alt="CV"></a>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    .sobre-mi{
+        display: flex;
+        width: 80%;
+        margin: 40px auto 0 auto; 
+    }
+    .sobre-mi__contenedor_foto_perfil{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .sobre_mi__foto_perfil{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: 0px 13px 31px -11px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 0px 13px 31px -11px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 13px 31px -11px rgba(0,0,0,0.75);
+    }
+    .sobre_mi__descripcion{
+        padding: 40px;
+    }
+    .sobre_mi__descripcion a{
+        text-decoration: none;
+    }
+</style>

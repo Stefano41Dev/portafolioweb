@@ -1,0 +1,23 @@
+---
+import { DATOS_PERFIL } from '../data/perfil';
+---
+
+<footer>
+    <p style="color: white; text-align: center; padding-top: 40px;">&copy; 2024 Stefano Gonzales Reyna</p>
+    <div class="footer_redes_sociales">
+        <a href={DATOS_PERFIL.linksSociales.github}><img src="icons/github.svg" class="img_icons" alt="Github"></a>
+        <a href={DATOS_PERFIL.linksSociales.linkdin}><img src="icons/linkedin.svg" class="img_icons" alt="Linkedin"></a>
+    </div>
+</footer>
+
+<style>
+    footer{
+        background-color: #424141;
+    }
+    .footer_redes_sociales{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 10px;
+    }
+</style>

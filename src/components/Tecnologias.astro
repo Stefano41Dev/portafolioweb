@@ -1,0 +1,20 @@
+---
+import Tecnologia from './Tecnologia.astro';
+import {TECNOLOGIAS_DATA} from '../data/tecnologias.js';
+---
+
+<h2 class="titulo">Tecnologias</h2>
+<div class="tecnologias_contenedor">
+    {TECNOLOGIAS_DATA.map((categoria) => (
+        <Tecnologia tituloCategoria={categoria.tituloCategoria} tecnologias={categoria.tecnologias}/>
+    ))}
+</div>
+
+<style>
+    .tecnologias_contenedor{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+</style>

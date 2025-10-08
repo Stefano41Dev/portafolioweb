@@ -1,0 +1,82 @@
+---
+interface Props{
+    titulo: string 
+    informacion: string
+    linkRepositorio: string
+    tecnologias:string
+}
+const {titulo, informacion, linkRepositorio, tecnologias} = Astro.props
+---
+
+<div class="card_contenedor" data-categoria="">
+    <div class="card_contenedor__titulo">
+        <p>{titulo}</p>
+        <hr>
+    </div>
+   
+    <div class="card_contenedor__informacion">
+        <h3>Descripcion:</h3>
+        <p class="card_contenedor--scroll">{informacion}</p>
+    </div>
+    <div class="card_contenedor__tecnologias">
+        <hr>
+        <h3>Tecnologias:</h3>
+        <p class=" card_contenedor--scroll">{tecnologias}</p>
+    </div>
+    <div class="card_contenedor__btn">
+        <a href={linkRepositorio}>Github <img src="icons/github.svg" class="img_icons" alt="icono github"></a>
+    </div>
+</div>
+
+<style>
+    .card_contenedor p {
+        margin: 0;
+    }
+    .card_contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 350px; 
+        border-radius: 20px;
+        background-color: rgb(233, 233, 233);
+        box-shadow: -4px 5px 31px -10px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -4px 5px 31px -10px rgba(0,0,0,0.75);
+        -moz-box-shadow: -4px 5px 31px -10px rgba(0,0,0,0.75);
+        gap: 20px;
+        padding: 20px;
+    }
+    .card_contenedor--scroll{
+        max-height: 100px;
+        overflow-y: auto;
+    }
+    .card_contenedor__titulo{
+        text-align: center;
+    }
+    .card_contenedor__btn {
+        margin-top: auto;
+    }
+    .card_contenedor__btn a {
+		text-decoration: none;
+		display: inline-flex;
+        align-items: center;
+        gap: 10px;
+		color: white; 
+		background-color: #333; 
+		padding: 10px 20px;
+		border-radius: 6px; 
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+		transition: background-color 0.3s ease, box-shadow 0.3s ease;
+	}
+	.btn_links:hover {
+		background-color: #555; 
+		box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+		cursor: pointer; 
+	}
+
+	.btn_links:active {
+    	background-color: #222;
+    	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    	transform: translateY(2px); 
+	}
+	
+</style>

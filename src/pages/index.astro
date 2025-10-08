@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Sobremi from '../components/Sobremi.astro';
+import Proyectos from '../components/Proyectos.astro';
+import Tecnologias from '../components/Tecnologias.astro';
+import Estudios from '../components/Estudios.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+	<Navbar></Navbar>
+	<main>
+		<Sobremi></Sobremi>
+		<Proyectos></Proyectos>
+		<Tecnologias></Tecnologias>
+		<Estudios></Estudios>
+	</main>
+	<Footer></Footer>
+</Layout>
+
+<style is:global>
+	main{
+		margin: 0 auto;
+		width: 80%;
+	}
+	.titulo{
+		text-align: center;
+	}
+	.img_icons{
+		width: 30px;
+		height: 30px;
+	}
+</style>
+

@@ -1,0 +1,35 @@
+---
+import Proyecto from "../components/Proyecto.astro";
+import {PROYECTOS_DATA} from "../data/proyectos-data"
+
+//const tipoProyecto = ['Fullstack', 'Frontend', 'Movil', 'API']; 
+---
+<div id="proyectos">
+    <h2 class="titulo">Proyectos</h2>
+
+    <section class="proyecto_contenedor">
+        {PROYECTOS_DATA.map(p=>(
+            <Proyecto titulo={p.titulo} 
+            informacion={p.informacion}
+            tecnologias={p.tecnologias} 
+            linkRepositorio={p.repositorio}    
+            />
+        ))}
+    </section>
+</div>
+
+
+<style>
+    .botones_tipo_proyecto{
+        margin-left: 20px;
+    }
+    .proyecto_contenedor{
+        background-color: rgb(78, 82, 82);
+        border-radius: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+</style>
+
