@@ -15,7 +15,7 @@ const {tituloCategoria, tecnologias} = Astro.props
     <div class="tecnologias_tipo_contenedor">
         {tecnologias.map((tec) => (
             <div class="tecnologias_tipo_contenedor__tecnologia">
-                <img src={'icons/' + tec.imagen} class="img_icons" alt={tec.nombreTecnologia} />
+                <img src={'portafolioweb/icons/' + tec.imagen} class="img_icons" alt={tec.nombreTecnologia} />
                 <p>{tec.nombreTecnologia}</p>
             </div>
         ))} 
