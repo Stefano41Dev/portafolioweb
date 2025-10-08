@@ -3,6 +3,6 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://stefano41dev.github.io/',
+    site: 'https://Stefano41Dev.github.io/',
     base: 'portafolioweb'
 });
