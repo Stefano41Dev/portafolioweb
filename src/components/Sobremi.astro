@@ -47,4 +47,32 @@ const BASE = import.meta.env.BASE_URL || '/';
     .sobre_mi__descripcion a{
         text-decoration: none;
     }
+    @media (max-width: 600px) {
+        .sobre-mi{
+            flex-direction: column;       
+            width: 95%;                   
+            margin: 20px auto; 
+            align-items: center;          
+            padding: 10px 0;
+        }
+        .sobre-mi__contenedor_foto_perfil{
+            margin-bottom: 12px;          
+        }
+        .sobre_mi__foto_perfil{
+            width: 120px;                
+            height: 120px;
+        }
+        .sobre_mi__descripcion{
+            padding: 16px;               
+            text-align: center;          
+        }
+        .sobre_mi__descripcion a {
+            display: inline-block;
+            margin: 0 6px;
+        }
+        .img_icons {
+            width: 28px;
+            height: 28px;
+        }
+    }
 </style>
