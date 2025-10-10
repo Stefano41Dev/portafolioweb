@@ -12,5 +12,12 @@ export const PROYECTOS_DATA = [
         tecnologias: "ASP-NET Core, Entity Framework, SQL Server, WebSocket, JWT",
         categoria: "Backend",
         repositorio: "https://github.com/Stefano41Dev/app-restaurante-backend.git"
+    },
+    {
+        titulo: "Backend reservas de hotel",
+        informacion: "API RESTful para el control de reservas de habitaciones de un hotel. Permite registrarse a los usuarios y que ellos pidan reservas online. ",
+        tecnologias: "Spring Boot, Spring Data JPA, Spring Security, MySQL, JWT, Swagger",
+        categoria: "Backend",
+        repositorio: "https://github.com/Stefano41Dev/api-reservas-springboot.git"
     }
 ]
