@@ -4,7 +4,6 @@ export const TECNOLOGIAS_DATA = [
         tecnologias: [
             { nombreTecnologia: "Java", imagen: "java.svg" },
             { nombreTecnologia: "C#", imagen: "csharp.svg" },
-            { nombreTecnologia: "JavaScript", imagen: "javascript.svg" },
             { nombreTecnologia: "TypeScript", imagen: "typescript.svg" }
         ]
     },
