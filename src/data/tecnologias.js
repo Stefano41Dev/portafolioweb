@@ -38,10 +38,6 @@ export const TECNOLOGIAS_DATA = [
             {
                 nombreTecnologia: "Astro",
                 imagen: "astro.svg"
-            },
-            {
-                nombreTecnologia: "React",
-                imagen: "react.svg"
             }
         ]
     },
@@ -76,6 +72,14 @@ export const TECNOLOGIAS_DATA = [
             {
                 nombreTecnologia: "Postman",
                 imagen: "postman.svg"
+            },
+            {
+                nombreTecnologia: "Swagger",
+                imagen: "swagger.svg"
+            },
+            {
+                nombreTecnologia: "Docker",
+                imagen: "docker.svg"
             }
             
         ]

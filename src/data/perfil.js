@@ -9,5 +9,5 @@ export const DATOS_PERFIL = {
         gmail: "mailto:stefano41dev@gmail.com",
         cv: BASE + "Stefano_Gonzales_CV.pdf"
     },
-    sobreMi: " Estudiante	de	la	carrera	de	Computación	e	Informática	con	interés	en	el	desarrollo	backend.	Me	caracterizo	por	ser	meticuloso	con	mi trabajo	y	aportar	soluciones	de	calidad.	Me	gusta	apoyar	y	compartir	mis	conocimientos	con	el	resto	de	compañeros.	Busco oportunidades	para aplicar mis habilidades en	entornos desafiantes y seguir creciendo	profesionalmente como programador",
+    sobreMi: " Estudiante	de	la	carrera	de	Computación	e	Informática, desempeñando como FullStack.	Me	caracterizo	por	ser	meticuloso	con	mi trabajo	y	aportar	soluciones	de	calidad.	Me	gusta	apoyar	y	compartir	mis	conocimientos	con	el	resto	de	compañeros.	Busco oportunidades	para aplicar mis habilidades en	entornos desafiantes y seguir creciendo	profesionalmente como programador",
 }

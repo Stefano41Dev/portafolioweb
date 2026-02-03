@@ -1,0 +1,20 @@
+---
+interface DescripcionItem {
+    realice: string;
+}
+interface Props{
+    titulo: string,
+    tiempo: string,
+    descripcion: DescripcionItem[]
+    tecnologias: string
+}
+
+const {titulo,tiempo,descripcion,tecnologias} = Astro.props;
+console.log(tiempo)
+---
+<div>
+    <h2>{titulo}</h2>
+    <p>{tiempo}</p>
+    <ul>{descripcion.map(item => <li>{item.realice}</li>)}</ul>
+    <span> Tecnologias : {tecnologias}</span>
+</div>
