@@ -16,5 +16,5 @@ console.log(tiempo)
     <h2>{titulo}</h2>
     <p>{tiempo}</p>
     <ul>{descripcion.map(item => <li>{item.realice}</li>)}</ul>
-    <span> Tecnologias : {tecnologias}</span>
+    {tecnologias && <span> Tecnologias : {tecnologias}</span>}
 </div>
