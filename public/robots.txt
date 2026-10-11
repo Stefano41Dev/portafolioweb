@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stefano41dev.github.io/portafolioweb/sitemap-index.xml
+Sitemap: https://stefano41dev.github.io/portafolioweb/sitemap.xml
